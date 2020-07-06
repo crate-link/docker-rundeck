@@ -5,7 +5,7 @@ ENV RUNDECK_VER=3.3.0-20200701 RUNDECK_HOME=/opt/rundeck PATH=/opt/rundeck/tools
 RUN set -x \
  && mkdir -p ${RUNDECK_HOME} \
  && cd ${RUNDECK_HOME} \
- && curl -fsSLO "http://dl.bintray.com/rundeck/rundeck-maven/rundeck-${RUNDECK_VER}.war" \
+ && curl -fsSLO "https://dl.bintray.com/rundeck/rundeck-maven/rundeck-${RUNDECK_VER}.war" \
  && mv rundeck-${RUNDECK_VER}.war rundeck.war \
  && java -jar rundeck.war --installonly
 
