@@ -1,6 +1,6 @@
 FROM adoptopenjdk/openjdk8:slim
 
-ENV RUNDECK_VER=3.3.5-20201019 RUNDECK_HOME=/opt/rundeck PATH=/opt/rundeck/tools/bin:${PATH} LANG=C.UTF-8
+ENV RUNDECK_VER=3.3.6-20201111 RUNDECK_HOME=/opt/rundeck PATH=/opt/rundeck/tools/bin:${PATH} LANG=C.UTF-8
 
 RUN set -x \
  && mkdir -p ${RUNDECK_HOME} \
